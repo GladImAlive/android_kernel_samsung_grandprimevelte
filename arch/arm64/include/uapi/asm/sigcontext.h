@@ -45,7 +45,6 @@ struct _aarch64_ctx {
 };
 
 #define FPSIMD_MAGIC	0x46508001
-
 struct fpsimd_context {
 	struct _aarch64_ctx head;
 	__u32 fpsr;
