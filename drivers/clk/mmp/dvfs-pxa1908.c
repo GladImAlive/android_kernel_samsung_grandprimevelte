@@ -232,7 +232,7 @@ static int __init __init_read_droinfo(void)
 /* FIXME: adjust according to SVC */
 static unsigned long freqs_cmb_1908[VM_RAIL_MAX][VL_MAX] = {
 	/* CORE */
-	{ 0, 624000, 624000, 832000, 832000, 1057000, 1248000, 1526000 },
+	{ 0, 600000, 600000, 832000, 832000, 1057000, 1248000, 1526000 },
 	/* DDR */
 	{ 0, 312000, 312000, 416000, 528000, 528000, 624000, 667000},
 	/* AXI */

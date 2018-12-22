@@ -137,16 +137,16 @@
 		 * console-size: 192 KB
 		 * pstore dump: 2 chunks, total 64 KB, 32 KB each
 		 * no dump_oops
-		 *
+		 */
 		ramoops {
 			compatible = "pstore,ramoops";
 			mem-size = <0x40000>;
-			mem-address = <0x8500000>;
+			mem-address = <0x9000000>;
 			record-size = <0x8000>;
 			console-size = <0x30000>;
 			dump-oops = <0>;
 			status = "okay";
-		};*/
+		};
 
 		devfreq-ddr {
 			status = "okay";
