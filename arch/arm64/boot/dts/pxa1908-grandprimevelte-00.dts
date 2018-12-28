@@ -138,6 +138,7 @@
 		 * pstore dump: 2 chunks, total 64 KB, 32 KB each
 		 * no dump_oops
 		 */
+       /*
 		ramoops {
 			compatible = "pstore,ramoops";
 			mem-size = <0x40000>;
@@ -147,6 +148,7 @@
 			dump-oops = <0>;
 			status = "okay";
 		};
+        */
 
 		devfreq-ddr {
 			status = "okay";
