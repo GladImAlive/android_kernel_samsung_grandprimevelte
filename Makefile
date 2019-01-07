@@ -103,6 +103,8 @@ ifeq ($(KBUILD_SRC),)
 # Do we want to locate output files in a separate directory?
 ifeq ("$(origin O)", "command line")
   KBUILD_OUTPUT := $(O)
+else
+  KBUILD_OUTPUT := "out"
 endif
 
 ifeq ("$(origin W)", "command line")
@@ -198,7 +200,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 #ARCH		?= $(SUBARCH)
 #CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 ARCH		?= arm64
-CROSS_COMPILE	?= ../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8/bin/aarch64-linux-android-
+CROSS_COMPILE	?= $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8/bin/aarch64-linux-android-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
